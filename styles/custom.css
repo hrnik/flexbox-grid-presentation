@@ -1,0 +1,176 @@
+.slide.slide__yelow {
+	background: #f1c40f;
+
+}
+
+.slide.slide__yelow h2, .slide.slide__yelow p{
+	color:white;
+}
+.slide.slide__small_font{
+	font-size:16px;
+}
+
+.slide--flex{
+	padding-bottom: 40px;
+}
+
+/* float */
+.float__container{
+	background: #3498db;
+}
+
+.float__item{
+	padding: 20px;
+}
+
+.float__item--left{
+	float:left;
+	background: #16a085;
+}
+
+.float__item--right{
+	float: right;
+	background: #9b59b6;
+}
+
+/* float */
+
+
+/*flexbox*/
+
+.just-container{
+	counter-reset: list;
+}
+
+.flexbox{
+	display: flex;
+	counter-reset: list;
+	min-height: 100%;
+}
+
+.flexbox--justify-center{
+	justify-content: center;
+}
+
+.flexbox--justify-end{
+	justify-content: flex-end;
+}
+
+.flexbox--justify-space-between{
+	justify-content: space-between;
+}
+
+.flexbox--justify-space-around{
+	justify-content: space-around;
+}
+
+.flexbox--align-items-center{
+	align-items: center;
+}
+
+.flexbox--align-items-end{
+	align-items: flex-end;
+}
+
+
+.flexbox--auto-height{
+	min-height: auto;
+}
+
+.flex--wrap-reverse{
+	flex-wrap: wrap-reverse;
+}
+
+.flexbox--wrap{
+	flex-wrap: wrap;
+}
+
+
+.item {
+	padding: 10px;
+	margin: 10px;
+	background: #3498db;
+}
+
+.item.item--min-width{
+	min-width: 200px;
+}
+
+.item.item--basis{
+	flex-basis: 200px;
+}
+
+.item::before{
+	color:white;
+	counter-increment: list;
+	content: counter(list);
+}
+
+.item--grow{
+	flex-grow: 1;
+}
+
+.item--grow-3{
+	flex-grow: 3;
+}
+
+.item--grow-1{
+	flex-grow: 1;
+}
+
+.page-container{
+	display:flex;
+	flex-wrap:wrap;
+	color:white;
+}
+
+.header {
+	background:#2ecc71;
+}
+.main{
+	background: #3498db;
+}
+.aside.aside-1 {
+	background:#9b59b6;
+}
+.aside.aside-2 {
+	background:#f1c40f;
+}
+.footer-page {
+	background:#c0392b;
+}
+.header, .main, .nav, .aside, .footer-page {
+  flex: 1 100%;
+}
+.main{
+	flex:3 0px;
+}
+.aside{
+	flex:1 auto;
+}
+
+.aside-1 { order: 1; }
+.main    { order: 2; }
+.aside-2 { order: 3; }
+.footer-page  { order: 4; }
+
+@media all and (max-width: 800px) {
+  .main{
+	  flex: 1 auto;
+  }
+
+.main    { order: 1; }
+.aside-2 { order: 2; }
+ .aside-1 { order: 3; }
+.footer-page  { order: 4; }
+}
+
+.item:first-child{
+	background: #16a085;
+}
+
+.item:last-child{
+	background: #9b59b6;
+}
+
+/*flexbox*/

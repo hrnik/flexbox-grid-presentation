@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Shower Presentation Engine</title>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="shower/themes/ribbon/styles/screen-16x10.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/styles/default.min.css">
+	<link rel="stylesheet" href="styles/custom.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/highlight.min.js"></script>
+</head>
+
+<body class="shower list">
+	<header class="caption">
+		<h1>Grid and Flexbox</h1>
+		<p>How we can use it.</p>
+	</header>
+	<section class="slide slide__yelow" id="cover">
+		<h2>Grid and Flexbox</h2>
+		<p>The future is near</a>
+		</p>
+		<!--
+			To apply styles to the certain slides
+			set slide ID to get needed elements
+			-->
+		<style>
+			#cover h2 {
+				margin: 120px 0 0;
+				color: #FFF;
+				text-align: center;
+				font-size: 70px;
+			}
+
+			#cover p {
+				margin: 10px 0 0;
+				text-align: center;
+				color: #FFF;
+				font-style: italic;
+				font-size: 20px;
+			}
+
+			#cover p a {
+				color: #FFF;
+			}
+
+		</style>
+	</section>
+	<section class="slide">
+		<h2>What happened before?</h2>
+		<ol>
+			<li>Tables</li>
+			<li class="next">Float</li>
+			<li class="next">Inline blocks</li>
+			<li class="next">...</li>
+		</ol>
+	</section>
+	<div class="slide slide__yelow active">
+		<h2 class="shout">Problems</h2>
+	</div>
+	<div class="slide slide__small_font">
+
+		<pre>
+			<code class>
+.float__container{
+	background: #3498db;
+}
+.float__item{
+	padding: 20px;
+}
+.float__item--left{
+	float:left;
+	background: #9b59b6;
+}
+.float__item--right{
+	float: right;
+	background: #16a085;
+}
+
+			</code>
+		</pre>
+	</div>
+		<div class="slide">
+		<pre>
+			<code class="html">
+&lt;div class=&quot;float__container&quot;&gt;
+	&lt;div class=&quot;float__item float__item--left&quot;&gt;Left&lt;/div&gt;
+	&lt;div class=&quot;float__item float__item--right&quot;&gt;Right&lt;/div&gt;
+&lt;/div&gt;
+			</code>
+		</pre>
+	</div>
+	<div class="slide">
+		<div class="float__container">
+			<div class="float__item float__item--left">Left</div>
+			<div class="float__item float__item--right">Right</div>
+		</div>
+	</div>
+	<div class="slide">
+		<pre><code class="html">
+&lt;div class=&quot;float__container&quot;&gt;
+	&lt;div class=&quot;float__item float__item--left&quot;&gt;Left&lt;/div&gt;
+	&lt;div class=&quot;float__item float__item--right&quot;&gt;Right&lt;/div&gt;
+&lt;/div&gt;
+&lt;h2&gt;After float&lt;/h2&gt;
+		</code></pre>
+	</div>
+	<div class="slide">
+		<div class="float__container">
+			<div class="float__item float__item--left">Left</div>
+			<div class="float__item float__item--right">Right</div>
+		</div>
+		<h2>After float</h2>
+	</div>
+<!---->
+<!-- FLEXBOX -->
+	<div class="slide slide__yelow active">
+		<h2 class="shout">Flexbox</h2>
+	</div>
+<!-- FLEXBOX -->
+	<section class="slide">
+		<img src="pictures/flexbox.jpg" alt="" class="cover">
+	</section>
+	<section class="slide">
+		<img src="pictures/flexbox_how_it_works.png" alt="" class="cover">
+	</section>
+	<section class="slide">
+		<div class="just-container">
+			<div class="item"></div>
+			<div class="item"></div>
+			<div class="item"></div>
+			<div class="item"></div>
+		</div>
+	</section>
+	<section class="slide slide--flex">
+		<div class="flexbox flexbox--auto-height">
+			<div class="item"></div>
+			<div class="item"></div>
+			<div class="item"></div>
+			<div class="item"></div>
+		</div>
+	</section>
+	<section class="slide slide--flex">
+		<div class="flexbox">
+			<div class="item"></div>
+			<div class="item"></div>
+			<div class="item"></div>
+			<div class="item"></div>
+		</div>
+	</section>
+	<section class="slide slide--flex">
+		<div class="flexbox flexbox--justify-center">
+			<div class="item"></div>
+			<div class="item"></div>
+			<div class="item"></div>
+			<div class="item"></div>
+		</div>
+	</section>
+	<section class="slide slide--flex">
+		<div class="flexbox flexbox--justify-end">
+			<div class="item"></div>
+			<div class="item"></div>
+			<div class="item"></div>
+			<div class="item"></div>
+		</div>
+	</section>
+	<section class="slide slide--flex">
+		<div class="flexbox flexbox--align-items-center">
+			<div class="item"></div>
+			<div class="item"></div>
+			<div class="item"></div>
+			<div class="item"></div>
+		</div>
+	</section>
+	<section class="slide slide--flex">
+		<div class="flexbox flexbox--align-items-end">
+			<div class="item"></div>
+			<div class="item"></div>
+			<div class="item"></div>
+			<div class="item"></div>
+		</div>
+	</section>
+	<section class="slide slide--flex">
+		<div class="flexbox flexbox--justify-space-between">
+			<div class="item"></div>
+			<div class="item"></div>
+			<div class="item"></div>
+			<div class="item"></div>
+		</div>
+	</section>
+	<section class="slide slide--flex">
+		<div class="flexbox flexbox--justify-space-around">
+			<div class="item"></div>
+			<div class="item"></div>
+			<div class="item"></div>
+			<div class="item"></div>
+		</div>
+	</section>
+	<section class="slide slide--flex">
+		<div class="flexbox">
+			<div class="item item--min-width"></div>
+			<div class="item item--min-width"></div>
+			<div class="item item--min-width"></div>
+			<div class="item item--min-width"></div>
+			<div class="item item--min-width"></div>
+			<div class="item item--min-width"></div>
+			<div class="item item--min-width"></div>
+			<div class="item item--min-width"></div>
+			<div class="item item--min-width"></div>
+		</div>
+	</section>
+	<section class="slide slide--flex">
+		<div class="flexbox flexbox--wrap">
+			<div class="item item--min-width"></div>
+			<div class="item item--min-width"></div>
+			<div class="item item--min-width"></div>
+			<div class="item item--min-width"></div>
+			<div class="item item--min-width"></div>
+			<div class="item item--min-width"></div>
+			<div class="item item--min-width"></div>
+			<div class="item item--min-width"></div>
+			<div class="item item--min-width"></div>
+		</div>
+	</section>
+	<section class="slide slide--flex">
+		<div class="flexbox flexbox--wrap flexbox--justify-center flexbox--align-items-center flexbox--justify-space-between">
+			<div class="item item--min-width"></div>
+			<div class="item item--min-width"></div>
+			<div class="item item--min-width"></div>
+			<div class="item item--min-width"></div>
+			<div class="item item--min-width"></div>
+			<div class="item item--min-width"></div>
+			<div class="item item--min-width"></div>
+			<div class="item item--min-width"></div>
+			<div class="item item--min-width"></div>
+		</div>
+	</section>
+	<section class="slide slide--flex">
+		<div class="flexbox flex--wrap-reverse flexbox--justify-center flexbox--align-items-center flexbox--justify-space-between">
+			<div class="item item--min-width"></div>
+			<div class="item item--min-width"></div>
+			<div class="item item--min-width"></div>
+			<div class="item item--min-width"></div>
+			<div class="item item--min-width"></div>
+			<div class="item item--min-width"></div>
+			<div class="item item--min-width"></div>
+			<div class="item item--min-width"></div>
+			<div class="item item--min-width"></div>
+		</div>
+	</section>
+	<section class="slide slide--flex">
+		<div class="flexbox">
+			<div class="item item--basis"></div>
+			<div class="item item--basis"></div>
+		</div>
+	</section>
+	<section class="slide slide--flex">
+		<div class="flexbox">
+			<div class="item item--basis"></div>
+			<div class="item item--basis item--grow"></div>
+		</div>
+	</section>
+	<section class="slide slide--flex">
+		<div class="flexbox">
+			<div class="item item--basis item--grow-3"></div>
+			<div class="item item--basis item--grow-1"></div>
+		</div>
+	</section>
+	<section class="slide slide--flex">
+		<div class="page-container">
+			<header class="header">Header</header>
+			<article class="main">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores distinctio, natus perspiciatis ea porro minima.</p>
+			</article>
+			<aside class="aside aside-1">Aside 1</aside>
+			<aside class="aside aside-2">Aside 2</aside>
+			<div class="footer-page">Footer</div>
+		</div>
+	</section>
+	<section class="slide">
+		<h2>Plain text on your slides</h2>
+		<p>Lorem ipsum dolo</p>
+	</section>
+	<section class="slide">
+		<h2>Two columns if you like</h2>
+		<p class="double">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+			Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+			irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+			non proident, sunt in culpa qui officia.</p>
+	</section>
+	<section class="slide">
+		<h2>All kind of lists</h2>
+		<ol>
+			<li>Simple lists are marked with bullets</li>
+			<li>Ordered lists begin with a number</li>
+			<li>You can even nest lists one inside another
+				<ul>
+					<li>Or mix their types</li>
+					<li>But do not go too far</li>
+					<li>Otherwise audience will be bored</li>
+				</ul>
+			</li>
+			<li>Look, seven rows exactly!</li>
+		</ol>
+	</section>
+	<section class="slide">
+		<h2>Serious citations</h2>
+		<figure>
+			<blockquote>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+					aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+					Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+					occaecat cupidatat non proident, sunt in culpa qui officia.</p>
+			</blockquote>
+			<figcaption>Marcus Tullius Cicero</figcaption>
+		</figure>
+	</section>
+	<section class="slide">
+		<h2>Code samples</h2>
+		<pre>
+			<code>&lt;!DOCTYPE html&gt;</code>
+			<code class="mark">&lt;html lang="en"&gt;</code>
+			<code><mark>&lt;head&gt;</mark> <span class="comment">&lt;!--Comment--&gt;</span></code>
+			<code>    &lt;title&gt;Shower&lt;/title&gt;</code>
+			<code>    &lt;meta charset="<mark class="important">UTF-8</mark>"&gt;</code>
+			<code>    &lt;link rel="stylesheet" href="screen.css"&gt;</code>
+			<code><mark>&lt;/head&gt;</mark></code>
+		</pre>
+	</section>
+	<section class="slide">
+		<h2>Even tables</h2>
+		<table>
+			<tr>
+				<th scope="col">Locavore</th>
+				<th>Umami</th>
+				<th>Helvetica</th>
+				<th>Vegan</th>
+			</tr>
+			<tr>
+				<th scope="row">Fingerstache</th>
+				<td>Kale</td>
+				<td>Chips</td>
+				<td>Keytar</td>
+			</tr>
+			<tr>
+				<th scope="row">Sriracha</th>
+				<td>Gluten-free</td>
+				<td>Ennui</td>
+				<td>Keffiyeh</td>
+			</tr>
+			<tr>
+				<th scope="row">Thundercats</th>
+				<td>Jean</td>
+				<td>Shorts</td>
+				<td>Biodiesel</td>
+			</tr>
+			<tr>
+				<th scope="row">Terry</th>
+				<td>Richardson</td>
+				<td>Swag</td>
+				<td>Blog</td>
+			</tr>
+		</table>
+		<p>It’s good to have information organized.</p>
+	</section>
+	<section class="slide" id="picture">
+		<h2>Pictures</h2>
+		<img src="pictures/picture.jpg" alt="" class="cover">
+		<style>
+			#picture h2 {
+				color: #FFF;
+			}
+		</style>
+	</section>
+	<section class="slide">
+		<h2 class="shout shrink">You can even shout this way</h2>
+	</section>
+	<section class="slide">
+		<h2>Inner navigation</h2>
+		<ol>
+			<li>Lets you reveal list items one by one</li>
+			<li class="next">To keep some key points</li>
+			<li class="next">In secret from audience</li>
+			<li class="next">But it will work only once</li>
+			<li class="next">Nobody wants to see the same joke twice</li>
+		</ol>
+	</section>
+	<section class="slide grid">
+		<h2>All nicely aligned to grid</h2>
+	</section>
+	<section class="slide" id="see-more">
+		<h2 class="shout">
+			<img src="pictures/logo.svg" alt="Shower logo">
+			<a href="https://github.com/shower/shower">See more on GitHub</a>
+		</h2>
+		<style>
+			#see-more h2 {
+				font-size: 100px
+			}
+
+			#see-more img {
+				width: 0.72em;
+				height: 0.72em;
+			}
+
+		</style>
+	</section>
+	<p class="badge">
+		<a href="https://github.com/shower/shower">Fork me on GitHub</a>
+	</p>
+	<!--
+		To hide progress bar from entire presentation
+		just remove “progress” element.
+		-->
+	<div class="progress"></div>
+	<script src="shower/shower.min.js"></script>
+	<!-- Copyright © 2015 Yours Truly, Famous Inc. -->
+	<!-- Photos by John Carey, fiftyfootshadows.net -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/highlight.min.js"></script>
+	<script>
+		hljs.initHighlightingOnLoad();
+
+	</script>
+</body>
+
+</html>
