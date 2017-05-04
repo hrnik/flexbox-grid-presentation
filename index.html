@@ -19,8 +19,8 @@
 	</header>
 	<section class="slide slide__yelow" id="cover">
 		<h2>Grid and Flexbox</h2>
-		<p>The future is near</a>
-		</p>
+		<p>The future is near</p>
+			<p>While only Flexbox</p>
 		<!--
 			To apply styles to the certain slides
 			set slide ID to get needed elements
@@ -56,13 +56,12 @@
 			<li class="next">...</li>
 		</ol>
 	</section>
-	<div class="slide slide__yelow active">
+	<div class="slide slide__yelow">
 		<h2 class="shout">Problems</h2>
 	</div>
 	<div class="slide slide__small_font">
-
 		<pre>
-			<code class>
+			<code>
 .float__container{
 	background: #3498db;
 }
@@ -81,7 +80,7 @@
 			</code>
 		</pre>
 	</div>
-		<div class="slide">
+	<div class="slide">
 		<pre>
 			<code class="html">
 &lt;div class=&quot;float__container&quot;&gt;
@@ -113,17 +112,27 @@
 		</div>
 		<h2>After float</h2>
 	</div>
-<!---->
-<!-- FLEXBOX -->
-	<div class="slide slide__yelow active">
+	<!---->
+	<!-- FLEXBOX -->
+	<div class="slide slide__yelow">
 		<h2 class="shout">Flexbox</h2>
 	</div>
-<!-- FLEXBOX -->
+	<!-- FLEXBOX -->
 	<section class="slide">
 		<img src="pictures/flexbox.jpg" alt="" class="cover">
 	</section>
 	<section class="slide">
 		<img src="pictures/flexbox_how_it_works.png" alt="" class="cover">
+	</section>
+	<section class="slide">
+		<pre><code class="html">
+&lt;div class=&quot;flexbox&quot;&gt;
+	&lt;div class=&quot;item&quot;&gt;&lt;/div&gt;
+	&lt;div class=&quot;item&quot;&gt;&lt;/div&gt;
+	&lt;div class=&quot;item&quot;&gt;&lt;/div&gt;
+	&lt;div class=&quot;item&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
 	</section>
 	<section class="slide">
 		<div class="just-container">
@@ -133,8 +142,63 @@
 			<div class="item"></div>
 		</div>
 	</section>
+	<section class="slide">
+		<pre><code class="css">
+.flexbox{
+	display: flex;
+}
+</code></pre>
+	</section>
 	<section class="slide slide--flex">
 		<div class="flexbox flexbox--auto-height">
+			<div class="item"></div>
+			<div class="item"></div>
+			<div class="item"></div>
+			<div class="item"></div>
+		</div>
+	</section>
+	<section class="slide">
+		<pre><code class="css">
+.flexbox{
+	display: flex;
+	min-height: 100%;
+}
+</code></pre>
+	</section>
+	<section class="slide slide--flex">
+		<div class="flexbox">
+			<div class="item"></div>
+			<div class="item"></div>
+			<div class="item"></div>
+			<div class="item"></div>
+		</div>
+	</section>
+	<section class="slide">
+		<pre><code class="css">
+.flexbox{
+	// default
+	// justify-content: flex-start;
+	justify-content: center;
+}
+</code></pre>
+	</section>
+	<section class="slide slide--flex">
+		<div class="flexbox flexbox--justify-center">
+			<div class="item"></div>
+			<div class="item"></div>
+			<div class="item"></div>
+			<div class="item"></div>
+		</div>
+	</section>
+	<section class="slide">
+		<pre><code class="css">
+.flexbox{
+	justify-content: flex-end;
+}
+</code></pre>
+	</section>
+	<section class="slide slide--flex">
+		<div class="flexbox flexbox--justify-end">
 			<div class="item"></div>
 			<div class="item"></div>
 			<div class="item"></div>
@@ -149,16 +213,19 @@
 			<div class="item"></div>
 		</div>
 	</section>
-	<section class="slide slide--flex">
-		<div class="flexbox flexbox--justify-center">
-			<div class="item"></div>
-			<div class="item"></div>
-			<div class="item"></div>
-			<div class="item"></div>
-		</div>
+	<section class="slide">
+		<pre>
+			<code class="css">
+.flexbox{
+	// default
+	// align-items: stretch;
+	align-items: flex-start;
+}
+		</code>
+	</pre>
 	</section>
 	<section class="slide slide--flex">
-		<div class="flexbox flexbox--justify-end">
+		<div class="flexbox flexbox--align-items-start">
 			<div class="item"></div>
 			<div class="item"></div>
 			<div class="item"></div>
@@ -182,12 +249,34 @@
 		</div>
 	</section>
 	<section class="slide slide--flex">
+		<div class="flexbox">
+			<div class="item"></div>
+			<div class="item"></div>
+			<div class="item"></div>
+			<div class="item"></div>
+		</div>
+	</section>
+	<section class="slide">
+		<pre><code class="css">
+.flexbox{
+	justify-content: space-between;
+}
+</code></pre>
+	</section>
+	<section class="slide slide--flex">
 		<div class="flexbox flexbox--justify-space-between">
 			<div class="item"></div>
 			<div class="item"></div>
 			<div class="item"></div>
 			<div class="item"></div>
 		</div>
+	</section>
+	<section class="slide">
+		<pre><code class="css">
+.flexbox{
+	justify-content: space-around;
+}
+</code></pre>
 	</section>
 	<section class="slide slide--flex">
 		<div class="flexbox flexbox--justify-space-around">
@@ -197,8 +286,78 @@
 			<div class="item"></div>
 		</div>
 	</section>
+	<section class="slide slide__yelow">
+		<h2 class="shout">We need more</h2>
+	</section>
 	<section class="slide slide--flex">
 		<div class="flexbox">
+			<div class="item item--min-width"></div>
+			<div class="item item--min-width"></div>
+			<div class="item item--min-width"></div>
+			<div class="item item--min-width"></div>
+			<div class="item item--min-width"></div>
+			<div class="item item--min-width"></div>
+			<div class="item item--min-width"></div>
+			<div class="item item--min-width"></div>
+			<div class="item item--min-width"></div>
+		</div>
+	</section>
+	<section class="slide">
+		<pre><code class="css">
+.flexbox{
+	// default
+	// flex-wrap: nowrap;
+	flex-wrap: wrap;
+}
+</code>
+</pre>
+	</section>
+	<section class="slide slide--flex">
+		<div class="flexbox flexbox--wrap">
+			<div class="item item--min-width"></div>
+			<div class="item item--min-width"></div>
+			<div class="item item--min-width"></div>
+			<div class="item item--min-width"></div>
+			<div class="item item--min-width"></div>
+			<div class="item item--min-width"></div>
+			<div class="item item--min-width"></div>
+			<div class="item item--min-width"></div>
+			<div class="item item--min-width"></div>
+		</div>
+	</section>
+	<section class="slide">
+		<pre><code class="css">
+.flexbox--wrap{
+	align-items: center;
+	justify-content: scenter;
+
+}
+</code>
+</pre>
+	</section>
+	<section class="slide slide--flex">
+		<div class="flexbox flexbox--wrap flexbox--justify-center flexbox--align-items-center">
+			<div class="item item--min-width"></div>
+			<div class="item item--min-width"></div>
+			<div class="item item--min-width"></div>
+			<div class="item item--min-width"></div>
+			<div class="item item--min-width"></div>
+			<div class="item item--min-width"></div>
+			<div class="item item--min-width"></div>
+			<div class="item item--min-width"></div>
+			<div class="item item--min-width"></div>
+		</div>
+	</section>
+	<section class="slide">
+		<pre><code class="css">
+.flexbox--wrap{
+	flex-wrap: wrap-reverse;
+}
+</code>
+</pre>
+	</section>
+	<section class="slide slide--flex">
+		<div class="flexbox flex--wrap-reverse flexbox--justify-center flexbox--align-items-center flexbox--justify-space-between">
 			<div class="item item--min-width"></div>
 			<div class="item item--min-width"></div>
 			<div class="item item--min-width"></div>
@@ -223,8 +382,16 @@
 			<div class="item item--min-width"></div>
 		</div>
 	</section>
-	<section class="slide slide--flex">
-		<div class="flexbox flexbox--wrap flexbox--justify-center flexbox--align-items-center flexbox--justify-space-between">
+	<section class="slide">
+		<pre><code class="css">
+.flexbox--wrap{
+	flex-direction:row-reverse;
+}
+</code>
+</pre>
+	</section>
+	<section class="slide slide--flex ">
+		<div class="flexbox flexbox--wrap flex--direction-row-rewerse">
 			<div class="item item--min-width"></div>
 			<div class="item item--min-width"></div>
 			<div class="item item--min-width"></div>
@@ -236,24 +403,27 @@
 			<div class="item item--min-width"></div>
 		</div>
 	</section>
-	<section class="slide slide--flex">
-		<div class="flexbox flex--wrap-reverse flexbox--justify-center flexbox--align-items-center flexbox--justify-space-between">
-			<div class="item item--min-width"></div>
-			<div class="item item--min-width"></div>
-			<div class="item item--min-width"></div>
-			<div class="item item--min-width"></div>
-			<div class="item item--min-width"></div>
-			<div class="item item--min-width"></div>
-			<div class="item item--min-width"></div>
-			<div class="item item--min-width"></div>
-			<div class="item item--min-width"></div>
-		</div>
+	<section class="slide">
+		<pre><code class="css">
+.item.item--basis{
+	flex-basis: 200px;
+}
+</code>
+</pre>
 	</section>
 	<section class="slide slide--flex">
 		<div class="flexbox">
 			<div class="item item--basis"></div>
 			<div class="item item--basis"></div>
 		</div>
+	</section>
+	<section class="slide">
+		<pre><code class="css">
+.item--grow{
+	flex-grow: 1;
+}
+</code>
+</pre>
 	</section>
 	<section class="slide slide--flex">
 		<div class="flexbox">
@@ -261,13 +431,73 @@
 			<div class="item item--basis item--grow"></div>
 		</div>
 	</section>
+	<section class="slide">
+		<pre><code class="css">
+.item--grow-3{
+	flex-grow: 3;
+}
+
+.item--grow-1{
+	flex-grow: 1;
+}
+</code>
+</pre>
+	</section>
 	<section class="slide slide--flex">
 		<div class="flexbox">
 			<div class="item item--basis item--grow-3"></div>
 			<div class="item item--basis item--grow-1"></div>
 		</div>
 	</section>
-	<section class="slide slide--flex">
+	<section class="slide ">
+		<pre><code class="html">
+&lt;div class=&quot;page-container&quot;&gt;
+	&lt;header class=&quot;header&quot;&gt;Header&lt;/header&gt;
+	&lt;article class=&quot;main&quot;&gt;
+		&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores distinctio, natus perspiciatis ea porro minima.&lt;/p&gt;
+	&lt;/article&gt;
+	&lt;aside class=&quot;aside aside-1&quot;&gt;Aside 1&lt;/aside&gt;
+	&lt;aside class=&quot;aside aside-2&quot;&gt;Aside 2&lt;/aside&gt;
+	&lt;div class=&quot;footer-page&quot;&gt;Footer&lt;/div&gt;
+&lt;/div&gt;
+			</code></pre>
+	</section>
+	<section class="slide slide__small_font">
+		<pre><code class="css">
+.page-container{
+	display:flex;
+	flex-wrap:wrap;
+}
+.header, .main, .nav, .aside, .footer-page {
+  flex: 1 100%;
+}
+.main{
+	flex:3 0px;
+}
+.aside{
+	flex:1 auto;
+}
+		</code></pre>
+	</section>
+	<section class="slide slide__small_font">
+		<pre><code class="css">
+/* 0 0 auto */
+flex: none;
+/* Одно значение, число без размерности: flex-grow */
+flex: 2;
+/* Одно значение, ширина/высота: flex-basis */
+flex: 10em;
+flex: auto;
+flex: content;
+/* Два значения: flex-grow | flex-basis */
+flex: 1 30px;
+/* Два значения: flex-grow | flex-shrink */
+flex: 2 2;
+/* Три значения: flex-grow | flex-shrink | flex-basis */
+flex: 2 2 10%;
+		</code></pre>
+	</section>
+	<section class="slide">
 		<div class="page-container">
 			<header class="header">Header</header>
 			<article class="main">
@@ -278,137 +508,32 @@
 			<div class="footer-page">Footer</div>
 		</div>
 	</section>
-	<section class="slide">
-		<h2>Plain text on your slides</h2>
-		<p>Lorem ipsum dolo</p>
-	</section>
-	<section class="slide">
-		<h2>Two columns if you like</h2>
-		<p class="double">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-			Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-			irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-			non proident, sunt in culpa qui officia.</p>
-	</section>
-	<section class="slide">
-		<h2>All kind of lists</h2>
-		<ol>
-			<li>Simple lists are marked with bullets</li>
-			<li>Ordered lists begin with a number</li>
-			<li>You can even nest lists one inside another
-				<ul>
-					<li>Or mix their types</li>
-					<li>But do not go too far</li>
-					<li>Otherwise audience will be bored</li>
-				</ul>
-			</li>
-			<li>Look, seven rows exactly!</li>
-		</ol>
-	</section>
-	<section class="slide">
-		<h2>Serious citations</h2>
-		<figure>
-			<blockquote>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-					aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-					Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-					occaecat cupidatat non proident, sunt in culpa qui officia.</p>
-			</blockquote>
-			<figcaption>Marcus Tullius Cicero</figcaption>
-		</figure>
-	</section>
-	<section class="slide">
-		<h2>Code samples</h2>
-		<pre>
-			<code>&lt;!DOCTYPE html&gt;</code>
-			<code class="mark">&lt;html lang="en"&gt;</code>
-			<code><mark>&lt;head&gt;</mark> <span class="comment">&lt;!--Comment--&gt;</span></code>
-			<code>    &lt;title&gt;Shower&lt;/title&gt;</code>
-			<code>    &lt;meta charset="<mark class="important">UTF-8</mark>"&gt;</code>
-			<code>    &lt;link rel="stylesheet" href="screen.css"&gt;</code>
-			<code><mark>&lt;/head&gt;</mark></code>
-		</pre>
-	</section>
-	<section class="slide">
-		<h2>Even tables</h2>
-		<table>
-			<tr>
-				<th scope="col">Locavore</th>
-				<th>Umami</th>
-				<th>Helvetica</th>
-				<th>Vegan</th>
-			</tr>
-			<tr>
-				<th scope="row">Fingerstache</th>
-				<td>Kale</td>
-				<td>Chips</td>
-				<td>Keytar</td>
-			</tr>
-			<tr>
-				<th scope="row">Sriracha</th>
-				<td>Gluten-free</td>
-				<td>Ennui</td>
-				<td>Keffiyeh</td>
-			</tr>
-			<tr>
-				<th scope="row">Thundercats</th>
-				<td>Jean</td>
-				<td>Shorts</td>
-				<td>Biodiesel</td>
-			</tr>
-			<tr>
-				<th scope="row">Terry</th>
-				<td>Richardson</td>
-				<td>Swag</td>
-				<td>Blog</td>
-			</tr>
-		</table>
-		<p>It’s good to have information organized.</p>
-	</section>
-	<section class="slide" id="picture">
-		<h2>Pictures</h2>
-		<img src="pictures/picture.jpg" alt="" class="cover">
-		<style>
-			#picture h2 {
-				color: #FFF;
-			}
-		</style>
-	</section>
-	<section class="slide">
-		<h2 class="shout shrink">You can even shout this way</h2>
-	</section>
-	<section class="slide">
-		<h2>Inner navigation</h2>
-		<ol>
-			<li>Lets you reveal list items one by one</li>
-			<li class="next">To keep some key points</li>
-			<li class="next">In secret from audience</li>
-			<li class="next">But it will work only once</li>
-			<li class="next">Nobody wants to see the same joke twice</li>
-		</ol>
-	</section>
-	<section class="slide grid">
-		<h2>All nicely aligned to grid</h2>
-	</section>
-	<section class="slide" id="see-more">
-		<h2 class="shout">
-			<img src="pictures/logo.svg" alt="Shower logo">
-			<a href="https://github.com/shower/shower">See more on GitHub</a>
-		</h2>
-		<style>
-			#see-more h2 {
-				font-size: 100px
-			}
+	<section class="slide slide slide__small_font">
+		<pre><code class="css">
 
-			#see-more img {
-				width: 0.72em;
-				height: 0.72em;
-			}
+@media all and (max-width: 800px) {
+  	.main{
+	  	flex: 1 auto;
+  	}
 
-		</style>
+	.main    { order: 1; }
+	.aside-2 { order: 2; }
+	.aside-1 { order: 3; }
+	.footer-page  { order: 4; }
+}
+	</code></pre>
 	</section>
-	<p class="badge">
-		<a href="https://github.com/shower/shower">Fork me on GitHub</a>
-	</p>
+	<section class="slide">
+		<div class="page-container">
+			<header class="header">Header</header>
+			<article class="main">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores distinctio, natus perspiciatis ea porro minima.</p>
+			</article>
+			<aside class="aside aside-1">Aside 1</aside>
+			<aside class="aside aside-2">Aside 2</aside>
+			<div class="footer-page">Footer</div>
+		</div>
+	</section>
 	<!--
 		To hide progress bar from entire presentation
 		just remove “progress” element.
