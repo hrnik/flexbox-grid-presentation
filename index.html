@@ -248,6 +248,49 @@
 			<div class="item"></div>
 		</div>
 	</section>
+		<section class="slide">
+		<pre>
+			<code class="css">
+.item--align-self-start{
+	align-self: flex-start;
+}
+		</code>
+	</pre>
+	</section>
+	<section class="slide slide--flex">
+		<div class="flexbox flexbox--align-items-end">
+			<div class="item"></div>
+			<div class="item  item--align-self-start"></div>
+			<div class="item"></div>
+			<div class="item"></div>
+		</div>
+	</section>
+			<section class="slide">
+		<pre>
+			<code class="css">
+.flexbox.item:nth-child(even){
+	align-self: flex-start;
+}
+		</code>
+	</pre>
+	</section>
+	<section class="slide slide--flex">
+		<div class="flexbox flexbox--align-items-end flexbox--item-odd-align-start">
+			<div class="item"></div>
+			<div class="item"></div>
+			<div class="item"></div>
+			<div class="item"></div>
+			<div class="item"></div>
+			<div class="item"></div>
+			<div class="item"></div>
+			<div class="item"></div>
+			<div class="item"></div>
+			<div class="item"></div>
+			<div class="item"></div>
+			<div class="item"></div>
+			<div class="item"></div>
+		</div>
+	</section>
 	<section class="slide slide--flex">
 		<div class="flexbox">
 			<div class="item"></div>
@@ -329,7 +372,7 @@
 		<pre><code class="css">
 .flexbox--wrap{
 	align-items: center;
-	justify-content: scenter;
+	justify-content: center;
 
 }
 </code>
@@ -534,6 +577,105 @@ flex: 2 2 10%;
 			<div class="footer-page">Footer</div>
 		</div>
 	</section>
+
+	<div class="slide slide__yelow">
+		<h2 class="shout">Grids (Others)</h2>
+	</div>
+	<section class="slide">
+		<pre><code class="html">
+&lt;div class=&quot;row&quot;&gt;
+	&lt;div class=&quot;col&quot;&gt;&lt;/div&gt;
+	&lt;div class=&quot;col&quot;&gt;&lt;/div&gt;
+	&lt;div class=&quot;col&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+	</section>
+<section class="slide">
+		<pre><code class="css">
+.row{
+	display: flex;
+}
+
+.col{
+	flex-basis: 0;
+	flex-grow: 1;
+}
+</code></pre>
+	</section>
+	<section class="slide">
+		<div class="row">
+			<div class="col"></div>
+			<div class="col"></div>
+			<div class="col"></div>
+		</div>
+	</section>
+		<section class="slide">
+		<div class="row">
+			<div class="col"></div>
+		</div>
+		<div class="row">
+			<div class="col"></div>
+			<div class="col"></div>
+		</div>
+		<div class="row">
+			<div class="col"></div>
+			<div class="col"></div>
+			<div class="col"></div>
+		</div>
+		<div class="row">
+			<div class="col"></div>
+			<div class="col"></div>
+			<div class="col"></div>
+			<div class="col"></div>
+			<div class="col"></div>
+			<div class="col"></div>
+		</div>
+		<div class="row">
+			<div class="col"></div>
+			<div class="col"></div>
+			<div class="col"></div>
+			<div class="col"></div>
+			<div class="col"></div>
+			<div class="col"></div>
+			<div class="col"></div>
+			<div class="col"></div>
+			<div class="col"></div>
+			<div class="col"></div>
+			<div class="col"></div>
+			<div class="col"></div>
+		</div>
+	</section>
+	<section class="slide">
+		<pre><code class="html">
+&lt;div class=&quot;row&quot;&gt;
+	&lt;div class=&quot;col&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;row&quot;&gt;
+	&lt;div class=&quot;col col-8&quot;&gt;&lt;/div&gt;
+	&lt;div class=&quot;col&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+		</code></pre>
+	</section>
+	<section class="slide">
+		<pre><code class="css">
+.col-8{
+	flex-basis: calc(8/12 * 100%);
+	max-width: calc(8/12 * 100%);
+}
+</code></pre>
+	</section>
+	<section class="slide">
+		<div class="row">
+			<div class="col"></div>
+		</div>
+		<div class="row">
+			<div class="col col-8"></div>
+			<div class="col"></div>
+		</div>
+	</section>
+	<div class="slide slide__yelow">
+		<h2 class="shout">Thanks you!</h2>
+	</div>
 	<!--
 		To hide progress bar from entire presentation
 		just remove “progress” element.
