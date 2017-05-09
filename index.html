@@ -674,6 +674,91 @@ flex: 2 2 10%;
 		</div>
 	</section>
 	<div class="slide slide__yelow">
+		<h2 class="shout">CSS Grid Layout</h2>
+	</div>
+	<section class="slide">
+		<img src="pictures/grid_can_i_use.jpg" alt="" class="cover">
+	</section>
+	<section class="slide">
+		<h2>Grid Container</h2>
+		<p>The element on which display: grid is applied. It's the direct parent of all the grid items.</p>
+		<br>
+		<h2>Grid Item</h2>
+		<p>The children (e.g. direct descendants) of the grid container. </p>
+	</section>
+	<section class="slide">
+		<h2>Grid Line</h2>
+		<p>The dividing lines that make up the structure of the grid.</p>
+		<img src="pictures/grid-line.png" alt="">
+	</section>
+	<section class="slide">
+		<h2>Grid Track</h2>
+		<p>The space between two adjacent grid lines.</p>
+		<img src="pictures/grid-track.png" alt="">
+	</section>
+	<section class="slide">
+		<h2>Grid Cell</h2>
+		<p>The space between two adjacent row and two adjacent column grid lines.</p>
+		<img src="pictures/grid-cell.png" alt="">
+	</section>
+	<section class="slide">
+		<h2>Grid Area</h2>
+		<p>The total space surrounded by four grid lines.</p>
+		<img src="pictures/grid-area.png" alt="">
+	</section>
+	<section class="slide ">
+		<pre><code class="html">
+&lt;div class=&quot;page-container&quot;&gt;
+	&lt;header class=&quot;header&quot;&gt;Header&lt;/header&gt;
+	&lt;article class=&quot;main&quot;&gt;
+		&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores distinctio, natus perspiciatis ea porro minima.&lt;/p&gt;
+	&lt;/article&gt;
+	&lt;aside class=&quot;aside aside-1&quot;&gt;Aside 1&lt;/aside&gt;
+	&lt;aside class=&quot;aside aside-2&quot;&gt;Aside 2&lt;/aside&gt;
+	&lt;div class=&quot;footer-page&quot;&gt;Footer&lt;/div&gt;
+&lt;/div&gt;
+			</code></pre>
+	</section>
+	<section class="slide slide__small_font">
+		<pre><code class="css">
+.page-container{
+ 	display: grid;
+    grid-template-columns: 100px 1fr 200px;
+    grid-template-rows: 50px 1fr 50px;
+}
+.header {
+	grid-column: 1 / 4;
+	grid-row:1/2
+}
+.footer-page {
+	grid-column: 1 / 4;
+	grid-row:3/4
+}
+
+</code></pre>
+	</section>
+	<div class="section slide">
+		<div class="grid-page-container">
+			<div class="grid-header">Header</div>
+			<div class="grid-aside grid-aside-1">Aside 1</div>
+			<div class="grid-main">Main</div>
+			<div class="grid-aside grid-aside-2">Aside 2</div>
+			<div class="grid-footer-page">Footer</div>
+		</div>
+	</div>
+	<div class="slide slide__yelow">
+		<h2 class="shout">grid-template-areas</h2>
+	</div>
+	<div class="section slide">
+		<div class="grid-page-container grid-page-container-area">
+			<div class="grid-header">Header</div>
+			<div class="grid-aside grid-aside-1">Aside 1</div>
+			<div class="grid-main">Main</div>
+			<div class="grid-aside grid-aside-2">Aside 2</div>
+			<div class="grid-footer-page">Footer</div>
+		</div>
+	</div>
+	<div class="slide slide__yelow">
 		<h2 class="shout">Thanks you!</h2>
 	</div>
 	<!--
