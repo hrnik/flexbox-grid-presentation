@@ -746,10 +746,81 @@ flex: 2 2 10%;
 			<div class="grid-footer-page">Footer</div>
 		</div>
 	</div>
+
+
+
 	<div class="slide slide__yelow">
 		<h2 class="shout">grid-template-areas</h2>
 	</div>
+	
+		<section class="slide ">
+		<pre><code class="html">
+&lt;div class=&quot;page-container&quot;&gt;
+	&lt;header class=&quot;header&quot;&gt;Header&lt;/header&gt;
+	&lt;article class=&quot;main&quot;&gt;Main&lt;/article&gt;
+	&lt;aside class=&quot;aside aside-1&quot;&gt;Aside 1&lt;/aside&gt;
+	&lt;aside class=&quot;aside aside-2&quot;&gt;Aside 2&lt;/aside&gt;
+	&lt;div class=&quot;footer-page&quot;&gt;Footer&lt;/div&gt;
+&lt;/div&gt;
+			</code></pre>
+	</section>
+	<section class="slide ">
+		<pre><code class="css">
+.page-container{
+    grid-template-columns: 100px 1fr 50px 200px;
+    grid-template-rows: 50px 1fr 50px;
+	grid-template-areas: 
+		"header header header header"
+		"aside-1 main . aside-2"
+		"footer footer footer footer";
+}
+
+
+</code></pre>
+	</section>
 	<div class="section slide">
+		<div class="grid-page-container grid-page-container-area">
+			<div class="grid-header">Header</div>
+			<div class="grid-aside grid-aside-1">Aside 1</div>
+			<div class="grid-main">Main</div>
+			<div class="grid-aside grid-aside-2">Aside 2</div>
+			<div class="grid-footer-page">Footer</div>
+		</div>
+	</div>
+		<section class="slide slide__small_font">
+		<pre><code class="css ">
+@media all and (max-width: 800px) {
+	.page-container{
+		grid-template-rows: auto;
+		grid-template-areas: 
+		"header header header header"
+		"aside-2 aside-2 aside-2 aside-2"
+		"aside-1 aside-1 aside-1 aside-1"
+		"main main main main"
+		"footer footer footer footer";
+	}
+}
+
+</code></pre>
+	</section>
+			<section class="slide slide__small_font">
+		<pre><code class="css ">
+@media all and (max-width: 800px) {
+	.page-container{
+		grid-template-columns:auto;
+		grid-template-rows: auto;
+		grid-template-areas: 
+		"header"
+		"aside-2"
+		"aside-1"
+		"main"
+		"footer";
+	}
+}
+
+</code></pre>
+	</section>
+		<div class="section slide">
 		<div class="grid-page-container grid-page-container-area">
 			<div class="grid-header">Header</div>
 			<div class="grid-aside grid-aside-1">Aside 1</div>
